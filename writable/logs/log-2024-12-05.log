@@ -1,0 +1,44 @@
+CRITICAL - 2024-12-05 14:33:13 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:33:13 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:33:13 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:33:13 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:33:13 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:33:13 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:33:13 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:45:29 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:46:47 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:46:48 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-05 14:48:01 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
