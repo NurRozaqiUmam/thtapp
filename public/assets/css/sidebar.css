@@ -1,0 +1,87 @@
+/* Sidebar Custom Background */
+.bg-red-custom {
+background-color: #ff0000; /* Warna merah */
+height: 10vh; /* Full tinggi */
+padding-top: 5px; /* Spasi di atas */
+}
+
+.sidebar-brand-text {
+    font-family: 'Roboto', sans-serif;
+    text-transform: none; /* Menghilangkan kapitalisasi */
+    white-space: nowrap;  /* Mencegah teks agar tidak membungkus ke baris kedua */
+    margin-top:  4px; /* Jarak atas dari brand */
+    padding-left:2px;
+    padding-right: -10px;
+}
+
+#sidebarToggleTop {
+    margin-top: 2px; /* Atur nilai sesuai kebutuhan */
+}
+
+#sidebarToggleTop i {
+    font-size: 15px; /* Ukuran ikon */
+    color: white;    /* Ubah warna ikon menjadi putih */
+}
+
+/* Sembunyikan ikon tiga garis di layar kecil */
+@media (max-width: 767px) {
+    #sidebarToggleTop {
+        display: none;
+    }
+}
+
+#sidebarToggleTop:focus {
+    outline: none;   /* Menghapus outline */
+    box-shadow: none; /* Menghapus efek shadow */
+}
+
+.sidebar-brand-icon img {
+    width: 25px;  /* Sesuaikan ukuran gambar */
+    height: auto;
+}
+
+/* Sidebar Brand */
+.sidebar-brand {
+font-size: 1.1rem;
+font-weight: bold;
+color: rgba(241, 241, 241, 0.863);
+margin-bottom: 30px; /* Jarak bawah dari brand */
+}
+
+/* Menjadikan teks seperti "Produk" dan elemen lainnya di sidebar menjadi bold */
+.nav-item span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;  /* Membuat teks menjadi bold */
+    padding-left: 10px; /* Spasi kiri */
+}
+
+/* Sidebar Item */
+.nav-item {
+border-radius: 5px; /* Rounded corners */
+transition: background-color 0.3s ease-in-out;
+}
+
+/* Active Item */
+.nav-item.active {
+background-color: rgb(255, 245, 245); /* Warna sorotan */
+border-left: 2px solid rgb(245, 239, 238); /* Garis sorot putih */
+}
+
+/* Link Style */
+.nav-link {
+color: rgb(255, 251, 251); /* Teks putih */
+display: flex;
+align-items: center;
+text-decoration: none;
+}
+
+/* Link Hover */
+.nav-link:hover {
+background-color: rgba(245, 239, 238, 0.466); /* Efek hover */
+border-left: 0px solid rgba(179, 168, 168, 0.8); /* Sorotan pada hover */
+}
+
+/* Divider Style */
+.sidebar-divider {
+border-top: 2px solid rgba(216, 205, 205, 0.863); /* Garis divider */
+}
