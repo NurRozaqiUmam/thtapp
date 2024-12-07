@@ -22,6 +22,15 @@
     <!-- sidebar style -->
     <link href="/assets/css/sidebar.css" rel="stylesheet"> 
 
+    <!-- footer style -->
+    <link href="/assets/css/footer.css" rel="stylesheet">
+
+    <!-- table style -->
+    <link href="/assets/css/table.css" rel="stylesheet">
+
+    <!-- profile style -->
+    <link href="/assets/css/profile.css" rel="stylesheet">
+
 
 </head>
 

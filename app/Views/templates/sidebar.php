@@ -21,14 +21,14 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item">
-    <a class="nav-link" href="#">
+    <a class="nav-link" href="">
     <img src="../assets/images/Package.png" class="nav-icon">
         <span>Produk</span></a>
 </li>
 
 <!-- Nav Item - Profil -->
 <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="">
         <img src="../assets/images/User.png" class="nav-icon">
             <span>Profil</span>
         </a>

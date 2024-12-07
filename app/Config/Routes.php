@@ -7,3 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('config_db', 'ConfigDb::index');
+$routes->get('produk', 'Produk::index');
+$routes->get('profil', 'Profil::index');
