@@ -3,15 +3,22 @@
 
 <!-- Page Heading -->
 <h1 class="h5 mb-4 text-gray-800"><?= $title; ?></h1>
+<!-- Tampilkan pesan flashdata atau session jika ada -->
+<?php if (session()->getFlashdata('error')) : ?>
+    <div class="alert alert-danger">
+        <?= session()->getFlashdata('error'); ?>
+    </div>
+<?php elseif (session()->getFlashdata('success')) : ?>
+    <div class="alert alert-success">
+        <?= session()->getFlashdata('success'); ?>
+    </div>
+<?php endif; ?>
 
 <!-- Section for Search and Filter -->
 <div class="d-flex justify-content-between align-items-center mb-3">
         <!-- Search Input -->
         <div class="form-group w-25">
-            <!-- <button class="btn" type="button">
-                <i class="fas fa-search fa-sm"></i>
-            </button> -->
-            <input type="text" class="form-control" placeholder="Cari barang" id="searchInput">
+            <input type="text" class="form-control" name="keyword" placeholder="Cari barang" id="searchInput">
         </div>
 
         <!-- Dropdown Filter -->
@@ -26,8 +33,8 @@
 
         <!-- Buttons for Export and Add Product -->
         <div>
-            <a href="#" class="btn btn-success btn-sm mr-2">Export Excel</a>
-            <a href="/produk/create" class="btn btn-danger btn-sm">Tambah Produk</a>
+            <a href="<?php echo base_url('/produk/excel'); ?>" class="btn btn-success btn-sm mr-2">Export Excel</a>
+            <a href="<?php echo base_url('/produk/tambahproduk'); ?>" class="btn btn-danger btn-sm">Tambah Produk</a>
         </div>
     </div>
 
@@ -55,7 +62,7 @@
             <td><?= number_format($item['harga_jual'], 0, ',', '.'); ?></td>
             <td><?= $item['stok_produk']; ?></td>
             <td>
-            <a href="/produk/edit/<?= $item['id']; ?>" class="btn">
+            <a href="/produk/editproduk/<?= $item['id']; ?>" class="btn">
                 <img src="../assets/images/edit.png" alt="Edit">
             </a>
             <a href="/produk/delete/<?= $item['id']; ?>" class="btn" onclick="return confirm('Yakin hapus data ini?')">
@@ -100,3 +107,32 @@
 
 </div>
 <!-- End of Main Content -->
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var searchInput = document.getElementById('searchInput');
+        var filterKategori = document.getElementById('filterKategori');
+
+        // Fungsi untuk memuat ulang data saat pencarian atau filter diubah
+        function loadData() {
+            var searchValue = searchInput.value;
+            var filterValue = filterKategori.value;
+
+            // Redirect ke URL dengan query pencarian dan filter
+            window.location.href = '/produk/index?searchInput=' + encodeURIComponent(searchValue) + '&filterKategori=' + filterValue;
+        }
+
+        // Mendengarkan perubahan pada pencarian dan filter kategori
+        searchInput.addEventListener('input', loadData);
+        filterKategori.addEventListener('change', loadData);
+
+        // Mengatasi tombol enter pada pencarian input
+        searchInput.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                loadData();
+            }
+        });
+    });
+</script>

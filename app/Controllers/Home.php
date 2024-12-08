@@ -9,13 +9,12 @@ class Home extends BaseController
         
         $session = session();
 
-        // Cek apakah pengguna sudah login
         if (!$session->get('isLoggedIn')) {
-            return redirect()->to('/login')->with('error', 'Silakan login terlebih dahulu!');
+            return redirect()->to('/login');
         }
 
         $data = [
-            'title' => 'SIMS Web App'
+            'title' => 'Selamat Datang Di SIMS Web App!'
         ];
 
         echo view('templates/header', $data);

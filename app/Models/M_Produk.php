@@ -17,4 +17,23 @@ class M_Produk extends Model
          // Menggunakan method bawaan findAll() untuk mengambil semua data
          return $this->findAll(); 
      }
+
+     // fungsi tambah produk
+    public function tambahProduk($data)
+    {
+        return $this->db->table('produk')->insert($data);
+    }
+
+    // fungsi delete produk
+    public function deleteProduk($id)
+    {
+        return $this->find($id); // Menggunakan method find() dari Model
+    }
+
+
+    // fungsi edit produk
+    public function editProduk($data, $id)
+    {
+        return $this->db->table('produk')->update($data, ['id' => $id]);
+    }
  }
