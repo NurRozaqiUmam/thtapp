@@ -8,6 +8,9 @@
 <div class="d-flex justify-content-between align-items-center mb-3">
         <!-- Search Input -->
         <div class="form-group w-25">
+            <!-- <button class="btn" type="button">
+                <i class="fas fa-search fa-sm"></i>
+            </button> -->
             <input type="text" class="form-control" placeholder="Cari barang" id="searchInput">
         </div>
 
@@ -52,8 +55,12 @@
             <td><?= number_format($item['harga_jual'], 0, ',', '.'); ?></td>
             <td><?= $item['stok_produk']; ?></td>
             <td>
-                <a href="/produk/edit/<?= $item['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
-                <a href="/produk/delete/<?= $item['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin hapus data ini?')">Hapus</a>
+            <a href="/produk/edit/<?= $item['id']; ?>" class="btn">
+                <img src="../assets/images/edit.png" alt="Edit">
+            </a>
+            <a href="/produk/delete/<?= $item['id']; ?>" class="btn" onclick="return confirm('Yakin hapus data ini?')">
+                <img src="../assets/images/delete.png" alt="Hapus">
+            </a>
             </td>
         </tr>
         <?php endforeach; ?>

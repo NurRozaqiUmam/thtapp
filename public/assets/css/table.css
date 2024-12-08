@@ -38,22 +38,24 @@ h1.h5 {
     padding: 5px;
     border-radius: 4px;
     height: 30px;
-    padding-top: 1px;
+    padding-top: 4px;
 }
 
 .form-group {
-    margin-bottom: 4px;
-    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 25px;
 }
 
 .filter-group {
-    margin-bottom: 4px;
+    margin-bottom: 0px;
     margin-right: 550px;
+    margin-top: 7px;
 }
 
 /* Button alignment */
 .d-flex {
     display: flex;
+    padding-top: 0px;
 }
 
 .justify-content-between {

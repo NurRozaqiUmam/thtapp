@@ -6,6 +6,14 @@ class Home extends BaseController
 {
     public function index()
     {
+        
+        $session = session();
+
+        // Cek apakah pengguna sudah login
+        if (!$session->get('isLoggedIn')) {
+            return redirect()->to('/login')->with('error', 'Silakan login terlebih dahulu!');
+        }
+
         $data = [
             'title' => 'SIMS Web App'
         ];

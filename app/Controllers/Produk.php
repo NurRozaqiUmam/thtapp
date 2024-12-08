@@ -7,9 +7,17 @@ use App\Models\M_Produk;
 
 class Produk extends Controller
 {
+
     public function index()
     {
         $model = new M_Produk();
+
+        $session = session();
+
+        // Cek apakah pengguna sudah login
+        if (!$session->get('isLoggedIn')) {
+            return redirect()->to('/login')->with('error', 'Silakan login terlebih dahulu!');
+        }
 
         // Tentukan jumlah data per halaman
         $perPage = 10; // Contoh 10 data per halaman

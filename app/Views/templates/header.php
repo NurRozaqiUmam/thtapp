@@ -31,6 +31,9 @@
     <!-- profile style -->
     <link href="/assets/css/profile.css" rel="stylesheet">
 
+    <!-- login style -->
+    <link href="/assets/css/login.css" rel="stylesheet">
+
 
 </head>
 

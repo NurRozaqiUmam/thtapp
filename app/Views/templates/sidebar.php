@@ -21,14 +21,14 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item">
-    <a class="nav-link" href="">
+    <a class="nav-link" href="<?php echo base_url('/produk'); ?>">
     <img src="../assets/images/Package.png" class="nav-icon">
         <span>Produk</span></a>
 </li>
 
 <!-- Nav Item - Profil -->
 <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="<?php echo base_url('/profil'); ?>">
         <img src="../assets/images/User.png" class="nav-icon">
             <span>Profil</span>
         </a>
@@ -36,7 +36,7 @@
 
     <!-- Nav Item - Logout -->
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="<?php echo base_url('/logout'); ?>">
         <img src="../assets/images/SignOut.png" class="nav-icon">
             <span>Logout</span>
         </a>

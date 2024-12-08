@@ -11,6 +11,13 @@ class Profil extends Controller
     {
         $model = new M_Profil();
 
+        $session = session();
+
+        // Cek apakah pengguna sudah login
+        if (!$session->get('isLoggedIn')) {
+            return redirect()->to('/login')->with('error', 'Silakan login terlebih dahulu!');
+        }
+
         // Ambil data user berdasarkan id
         $user = $model->getUser(1);
 
