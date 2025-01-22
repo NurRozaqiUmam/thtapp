@@ -1,0 +1,8 @@
+CRITICAL - 2025-01-21 13:43:19 --> ErrorException: Array and string offset access syntax with curly braces is no longer supported
+[Method: GET, Route: produk/excel]
+in APPPATH\PHPExcel-1.8\PHPExcel-1.8\Classes\PHPExcel\Shared\String.php on line 526.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-21 13:44:19 --> ErrorException: Array and string offset access syntax with curly braces is no longer supported
+[Method: GET, Route: produk/excel]
+in APPPATH\PHPExcel-1.8\PHPExcel-1.8\Classes\PHPExcel\Shared\String.php on line 526.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
